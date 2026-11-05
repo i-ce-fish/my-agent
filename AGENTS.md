@@ -14,7 +14,7 @@ LLM API / Structured Output → Tool Calling & Agent Loop → MCP → RAG → Me
 
 ## 2. 项目技术约定（先填好，AI 每次据此工作）
 
-- 模型 API：内网部署，OpenAI 兼容接口，base_url 为 `http://10.0.0.134/deeperseeker/v1`（调用 `/chat/completions`，Bearer Token 认证）
+- 模型 API：内网部署，OpenAI 兼容接口，base_url 为 `https://ds.api.binyu.org/v1`（调用 `/chat/completions`，Bearer Token 认证）
 - 密钥：Token 只放 `.env`，不得写进代码、文档或提交到仓库
 - 目录：`src/`（代码）、`tests/`、`docs/learning/`（学习记录）
 - 原则：先标准库和简单函数，真实问题出现后再加抽象或框架
